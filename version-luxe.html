@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swadeshi Khadi Bhandar — Luxe version</title>
+<meta name="description" content="Swadeshi Khadi Bhandar, Kandivali West, Mumbai — pure khadi since 1982. Khadi fabric by the metre, men&#x27;s kurtas and shirts, sarees, herbal soaps and pure honey. Shop No. 34, Shreeji Darshan Shopping Centre, S.V. Road.">
+<meta property="og:title" content="Swadeshi Khadi Bhandar — Pure Khadi since 1982">
+<meta property="og:description" content="Swadeshi Khadi Bhandar, Kandivali West, Mumbai — pure khadi since 1982. Khadi fabric by the metre, men&#x27;s kurtas and shirts, sarees, herbal soaps and pure honey. Shop No. 34, Shreeji Darshan Shopping Centre, S.V. Road.">
+<meta property="og:image" content="images/hero-khadi-still-life.jpg">
+<meta name="theme-color" content="#F8F4EE">
+<link rel="icon" type="image/png" href="logo/sk-icon-square.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#121210}a:hover{color:#A65D3F}
+.paper{background-color:#F6F4EF;background-image:url(images/texture-paper.png);background-size:320px 320px}
+.wrap{max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,56px);box-sizing:border-box}
+.sec{padding:clamp(80px,10vw,144px) 0}
+.over{margin:0 0 16px;font-size:12px;font-weight:700;letter-spacing:.28em;text-transform:uppercase}
+.h2{margin:0;font-family:'Playfair Display',Georgia,serif;font-weight:500;font-size:clamp(34px,4.4vw,62px);line-height:1.05;letter-spacing:-.02em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;box-sizing:border-box;padding:15px 30px;border-radius:2px;font-weight:600;text-decoration:none;transition:transform .25s ease,box-shadow .25s ease,background-color .25s ease,color .25s ease}
+.btn:hover{transform:translateY(-1px) scale(1.02);box-shadow:0 14px 28px -16px rgba(0,0,0,.6)}
+.card{transition:transform .6s cubic-bezier(.2,.7,.2,1),box-shadow .6s cubic-bezier(.2,.7,.2,1)}
+.card img{transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.card:hover{transform:translateY(-6px);box-shadow:0 30px 60px -34px rgba(0,0,0,.5)}
+.card:hover img{transform:scale(1.05)}
+.card .arr{transition:transform .35s ease,background-color .35s ease,color .35s ease}
+.card:hover .arr{transform:translateX(4px);background-color:#A65D3F;color:#FFFFFF}
+.cat-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:clamp(168px,44vw,220px);gap:12px}
+.cat-tall{grid-row:span 2}
+.track{display:flex;gap:clamp(14px,2vw,24px);overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:clamp(20px,4vw,56px);padding:4px clamp(20px,4vw,56px) 28px;box-sizing:border-box;scrollbar-width:thin;scrollbar-color:#D9D4CA transparent}
+.track>*{flex:0 0 clamp(232px,24vw,320px);scroll-snap-align:start}
+.hero{position:relative;min-height:min(100svh,920px);display:flex;overflow:hidden;box-sizing:border-box}
+.grain{position:absolute;top:-20%;left:-20%;width:140%;height:140%;background-image:url(images/texture-film-grain.png);background-size:220px 220px;mix-blend-mode:overlay;opacity:0.35;pointer-events:none;animation:grain 1.1s steps(5) infinite}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-4%,3%)}40%{transform:translate(3%,-4%)}60%{transform:translate(-3%,-2%)}80%{transform:translate(4%,3%)}100%{transform:translate(0,0)}}
+.kb{animation:kb 26s ease-in-out infinite alternate;transform-origin:55% 50%}
+@keyframes kb{from{transform:scale(1.04)}to{transform:scale(1.13) translate(-1.5%,-1%)}}
+.logo-b{position:absolute;top:0;left:0;opacity:0}
+.nav-links{display:flex;align-items:center;gap:4px 30px}
+@keyframes sk-spin{to{transform:rotate(360deg)}}
+.sk-spin{animation:sk-spin 9s linear infinite;transform-origin:100px 100px}
+.sk-spin-slow{animation:sk-spin 30s linear infinite reverse;transform-origin:100px 100px}
+@media (min-width:900px){.cat-grid{grid-template-columns:1.3fr 1fr 1fr;grid-auto-rows:310px;gap:22px}}
+@media (max-width:640px){
+.sec{padding:64px 0}
+.nav-links a.nl{display:none}
+.btns>a{flex:1 1 100%}
+.hero{min-height:min(92svh,760px)}
+.card .arr{display:none!important}
+.cat-sub{display:none}
+.cat-lbl{left:8px!important;right:8px!important;bottom:8px!important;padding:10px 12px!important;outline-offset:-4px!important}
+.cat-grid{grid-auto-rows:200px;gap:10px}
+.track>*{flex-basis:72vw}
+.stack-sm{gap:32px!important}
+.hide-sm{display:none!important}
+}
+@supports (animation-timeline: view()){
+@keyframes rv{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
+.reveal{animation:rv linear both;animation-timeline:view();animation-range:entry 0% cover 24%}
+@keyframes hdr{to{background-color:rgba(246, 244, 239, 0.97);box-shadow:0 1px 0 rgba(0,0,0,.08)}}
+.hdr{animation:hdr linear both;animation-timeline:scroll(root);animation-range:0 220px}
+@keyframes hdrtxt{to{color:#121210;border-color:#121210}}
+.hdr-t{animation:hdrtxt linear both;animation-timeline:scroll(root);animation-range:0 220px}
+@keyframes fadeout{to{opacity:0}}
+@keyframes fadein{to{opacity:1}}
+.logo-a{animation:fadeout linear both;animation-timeline:scroll(root);animation-range:0 220px}
+.logo-b{animation:fadein linear both;animation-timeline:scroll(root);animation-range:0 220px}
+}
+@media (prefers-reduced-motion: reduce){.reveal,.hdr,.hdr-t,.logo-a,.logo-b,.kb,.grain,.sk-spin,.sk-spin-slow{animation:none!important}.logo-b{opacity:0}.btn,.card,.card img,.card .arr{transition:none}}
+</style>
+</head>
+<body>
+<div id="top" class="paper" style="width: 100%; color: #121210; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.65">
+<header class="hdr" style="position: sticky; top: 0; z-index: 30; height: 78px; margin-bottom: -78px; background-color: rgba(15, 14, 12, 0.28); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px)">
+<div class="wrap" style="height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 20px">
+<a href="#top" style="position: relative; display: block">
+<img class="logo-a" src="logo/swadeshi-logo-horizontal-white.svg" alt="Swadeshi Khadi Bhandar, since 1982" style="display: block; height: 46px; width: auto">
+<img class="logo-b" src="logo/swadeshi-logo-horizontal-red.svg" alt="" style="display: block; height: 46px; width: auto">
+</a>
+<nav aria-label="Main" class="nav-links" style="font-size: 14px; font-weight: 600; letter-spacing: 0.02em">
+<a href="#collection" class="nl hdr-t" style="text-decoration: none; padding: 10px 0; color: #F4F1EA">Collection</a>
+<a href="#story" class="nl hdr-t" style="text-decoration: none; padding: 10px 0; color: #F4F1EA">Our Story</a>
+<a href="#why" class="nl hdr-t" style="text-decoration: none; padding: 10px 0; color: #F4F1EA">Why Khadi</a>
+<a href="#visit" class="hdr-t" style="display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box; padding: 10px 20px; border-radius: 2px; border: 1.5px solid #F4F1EA; color: #F4F1EA; text-decoration: none">Visit the Store</a>
+</nav>
+</div>
+</header>
+<section class="hero" aria-labelledby="hero-title" style="background-color: #0F0E0C; color: #F4F1EA">
+<div class="grain" aria-hidden="true"></div>
+<div style="position: relative; width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr))">
+<div style="position: relative; min-height: min(62svh, 520px); order: 2; overflow: hidden">
+<img class="kb" src="images/hero-khadi-still-life.jpg" alt="Folded khadi fabrics in natural colours on a wooden table beside a charkha" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: saturate(0.88) contrast(1.04)">
+<div aria-hidden="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: linear-gradient(to right, rgba(15, 14, 12, 0.55), rgba(15, 14, 12, 0) 35%)"></div>
+<div aria-hidden="true" style="position: absolute; left: 24px; bottom: 24px; width: clamp(104px, 9vw, 140px); height: clamp(104px, 9vw, 140px)"><svg viewBox="0 0 200 200" width="100%" height="100%" style="display: block">
+<defs><path id="ring-l" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"></path></defs>
+<g class="sk-spin-slow"><text style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 14.5px; font-weight: 700; letter-spacing: 2.6px; fill: #F4F1EA"><textPath href="#ring-l">PURE KHADI • SINCE 1982 • KANDIVALI WEST •</textPath></text></g>
+<g class="sk-spin" style="fill: none; stroke: #F4F1EA; stroke-linecap: round; stroke-linejoin: round">
+<circle cx="100" cy="100" r="47" style="stroke-width: 3.2"></circle>
+<polygon points="147.0,100.0 137.7,110.1 140.7,123.5 127.6,127.6 123.5,140.7 110.1,137.7 100.0,147.0 89.9,137.7 76.5,140.7 72.4,127.6 59.3,123.5 62.3,110.1 53.0,100.0 62.3,89.9 59.3,76.5 72.4,72.4 76.5,59.3 89.9,62.3 100.0,53.0 110.1,62.3 123.5,59.3 127.6,72.4 140.7,76.5 137.7,89.9" style="stroke-width: 1.1"></polygon>
+<g style="stroke-width: 2.2"><line x1="110.0" y1="100.0" x2="147.0" y2="100.0"></line><line x1="108.7" y1="105.0" x2="140.7" y2="123.5"></line><line x1="105.0" y1="108.7" x2="123.5" y2="140.7"></line><line x1="100.0" y1="110.0" x2="100.0" y2="147.0"></line><line x1="95.0" y1="108.7" x2="76.5" y2="140.7"></line><line x1="91.3" y1="105.0" x2="59.3" y2="123.5"></line><line x1="90.0" y1="100.0" x2="53.0" y2="100.0"></line><line x1="91.3" y1="95.0" x2="59.3" y2="76.5"></line><line x1="95.0" y1="91.3" x2="76.5" y2="59.3"></line><line x1="100.0" y1="90.0" x2="100.0" y2="53.0"></line><line x1="105.0" y1="91.3" x2="123.5" y2="59.3"></line><line x1="108.7" y1="95.0" x2="140.7" y2="76.5"></line></g>
+<circle cx="100" cy="100" r="10" style="fill: #F4F1EA; stroke: none"></circle>
+<circle cx="100" cy="100" r="3.5" style="fill: #0F0E0C; stroke: none"></circle>
+</g>
+</svg></div>
+</div>
+<div class="reveal" style="order: 1; display: flex; flex-direction: column; justify-content: center; padding: 128px clamp(20px, 5vw, 80px) clamp(56px, 7vw, 96px)">
+<p class="over" style="color: #9C968C">Kandivali West • Since 1982</p>
+<h1 id="hero-title" style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: clamp(46px, 6.2vw, 96px); line-height: 1.0; letter-spacing: -0.03em; color: #F4F1EA">Pure <em style="font-style: italic; color: #B9C4A7">Khadi</em>, in Kandivali Since 1982.</h1>
+<div aria-hidden="true" style="width: 64px; height: 1px; background-color: #5A564F; margin: 32px 0 0"></div>
+<p style="margin: 28px 0 0; max-width: 460px; font-size: clamp(15px, 1.3vw, 17px); line-height: 1.8; color: #B3ADA3">Cloth spun by hand and woven slowly — sold by the metre, cut into kurtas, shirts and sarees, kept beside herbal soaps and pure honey. The same honest counter on S.V. Road for over four decades.</p>
+<div class="btns" style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px">
+<a href="#collection" class="btn" style="background-color: #F4F1EA; color: #0F0E0C">Browse the Collection <span aria-hidden="true">→</span></a>
+<a href="#visit" class="btn" style="border: 1px solid #5A564F; color: #F4F1EA">Visit the Store</a>
+</div>
+<p style="margin: 44px 0 0; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 14px; color: #7E786F">Hand-woven khadi · By the metre</p>
+</div>
+</div>
+</section>
+<section id="collection" class="sec" aria-labelledby="cat-title">
+<div class="wrap">
+<div class="reveal" style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 48px; margin-bottom: clamp(28px, 4vw, 56px)">
+<div>
+<p class="over" style="color: #7A756C">The collection</p>
+<h2 id="cat-title" class="h2" style="max-width: 640px">Everything khadi, under one roof</h2>
+</div>
+<p style="margin: 0; max-width: 360px; color: #4A4741">From cloth by the metre to the soap by your sink — come and see the full range at the shop.</p>
+</div>
+<div class="cat-grid">
+<a href="#featured" class="card cat-tall" style="position: relative; display: block; border-radius: 4px; overflow: hidden; background-color: #E9E5DD; text-decoration: none; color: #121210">
+<img src="images/category-fabric.jpg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center">
+<span class="cat-lbl" style="position: absolute; left: 0; right: 0; bottom: 0; display: flex; align-items: flex-end; justify-content: space-between; gap: 10px; padding: 18px 20px; background-color: rgba(246, 244, 239, 0.96)">
+<span style="display: flex; flex-direction: column"><span style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(20px, 2vw, 26px); font-weight: 500; line-height: 1.15">Khadi Fabric</span><span class="cat-sub" style="font-size: 12px; letter-spacing: 0.04em; color: #7A756C">By the metre, in every shade</span></span>
+<span class="arr" aria-hidden="true" style="flex-shrink: 0; font-size: 18px">→</span>
+</span>
+</a>
+<a href="#featured" class="card" style="position: relative; display: block; border-radius: 4px; overflow: hidden; background-color: #E9E5DD; text-decoration: none; color: #121210">
+<img src="images/category-mens.jpg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 28%">
+<span class="cat-lbl" style="position: absolute; left: 0; right: 0; bottom: 0; display: flex; align-items: flex-end; justify-content: space-between; gap: 10px; padding: 18px 20px; background-color: rgba(246, 244, 239, 0.96)">
+<span style="display: flex; flex-direction: column"><span style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(17px, 1.6vw, 21px); font-weight: 500; line-height: 1.15">Men's Wear</span><span class="cat-sub" style="font-size: 12px; letter-spacing: 0.04em; color: #7A756C">Kurtas, shirts, jackets</span></span>
+<span class="arr" aria-hidden="true" style="flex-shrink: 0; font-size: 18px">→</span>
+</span>
+</a>
+<a href="#featured" class="card" style="position: relative; display: block; border-radius: 4px; overflow: hidden; background-color: #E9E5DD; text-decoration: none; color: #121210">
+<img src="images/category-sarees.jpg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 18%">
+<span class="cat-lbl" style="position: absolute; left: 0; right: 0; bottom: 0; display: flex; align-items: flex-end; justify-content: space-between; gap: 10px; padding: 18px 20px; background-color: rgba(246, 244, 239, 0.96)">
+<span style="display: flex; flex-direction: column"><span style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(17px, 1.6vw, 21px); font-weight: 500; line-height: 1.15">Sarees</span><span class="cat-sub" style="font-size: 12px; letter-spacing: 0.04em; color: #7A756C">Cotton and silk</span></span>
+<span class="arr" aria-hidden="true" style="flex-shrink: 0; font-size: 18px">→</span>
+</span>
+</a>
+<a href="#featured" class="card" style="position: relative; display: block; border-radius: 4px; overflow: hidden; background-color: #E9E5DD; text-decoration: none; color: #121210">
+<img src="images/category-soaps.jpg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center">
+<span class="cat-lbl" style="position: absolute; left: 0; right: 0; bottom: 0; display: flex; align-items: flex-end; justify-content: space-between; gap: 10px; padding: 18px 20px; background-color: rgba(246, 244, 239, 0.96)">
+<span style="display: flex; flex-direction: column"><span style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(17px, 1.6vw, 21px); font-weight: 500; line-height: 1.15">Soaps &amp; Herbal Care</span><span class="cat-sub" style="font-size: 12px; letter-spacing: 0.04em; color: #7A756C">Soaps, shampoos, mehendi</span></span>
+<span class="arr" aria-hidden="true" style="flex-shrink: 0; font-size: 18px">→</span>
+</span>
+</a>
+<a href="#featured" class="card" style="position: relative; display: block; border-radius: 4px; overflow: hidden; background-color: #E9E5DD; text-decoration: none; color: #121210">
+<img src="images/category-honey.jpg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 40%">
+<span class="cat-lbl" style="position: absolute; left: 0; right: 0; bottom: 0; display: flex; align-items: flex-end; justify-content: space-between; gap: 10px; padding: 18px 20px; background-color: rgba(246, 244, 239, 0.96)">
+<span style="display: flex; flex-direction: column"><span style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(17px, 1.6vw, 21px); font-weight: 500; line-height: 1.15">Honey</span><span class="cat-sub" style="font-size: 12px; letter-spacing: 0.04em; color: #7A756C">Pure Agmark honey</span></span>
+<span class="arr" aria-hidden="true" style="flex-shrink: 0; font-size: 18px">→</span>
+</span>
+</a>
+</div>
+</div>
+</section>
+<section id="featured" class="sec" aria-labelledby="feat-title" style="background-color: #EEEBE4">
+<div class="wrap reveal" style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 40px">
+<div>
+<p class="over" style="color: #7A756C">From our shelves</p>
+<h2 id="feat-title" class="h2">A few things we love</h2>
+</div>
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; color: #7A756C">Scroll sideways →</p>
+</div>
+<div class="track" role="list" style="margin-top: clamp(24px, 4vw, 48px)">
+
+<div role="listitem"><article class="card" style="background-color: transparent">
+<div style="border-radius: 4px; overflow: hidden; background-color: #E9E5DD"><img src="images/product-fabric-bright-colours.jpg" alt="Khadi fabric, bright colours" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover"></div>
+<div style="display: flex; gap: 14px; padding: 16px 2px 0; border-top: 0">
+<span style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 15px; color: #7A756C">01</span>
+<span style="display: flex; flex-direction: column"><span style="font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 500; line-height: 1.3">Khadi fabric, bright colours</span><span style="margin-top: 2px; font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #7A756C">Fabric</span></span>
+</div>
+</article></div>
+
+<div role="listitem"><article class="card" style="background-color: transparent">
+<div style="border-radius: 4px; overflow: hidden; background-color: #E9E5DD"><img src="images/product-kurta-blue.jpg" alt="Short khadi kurta, blue" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover"></div>
+<div style="display: flex; gap: 14px; padding: 16px 2px 0; border-top: 0">
+<span style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 15px; color: #7A756C">02</span>
+<span style="display: flex; flex-direction: column"><span style="font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 500; line-height: 1.3">Short khadi kurta, blue</span><span style="margin-top: 2px; font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #7A756C">Men&#x27;s Wear</span></span>
+</div>
+</article></div>
+
+<div role="listitem"><article class="card" style="background-color: transparent">
+<div style="border-radius: 4px; overflow: hidden; background-color: #E9E5DD"><img src="images/product-saree-beige-teal.jpg" alt="Cotton saree, beige and teal" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover"></div>
+<div style="display: flex; gap: 14px; padding: 16px 2px 0; border-top: 0">
+<span style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 15px; color: #7A756C">03</span>
+<span style="display: flex; flex-direction: column"><span style="font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 500; line-height: 1.3">Cotton saree, beige and teal</span><span style="margin-top: 2px; font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #7A756C">Sarees</span></span>
+</div>
+</article></div>
+
+<div role="listitem"><article class="card" style="background-color: transparent">
+<div style="border-radius: 4px; overflow: hidden; background-color: #E9E5DD"><img src="images/product-nehru-jacket-set.jpg" alt="Nehru jacket with kurta" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover"></div>
+<div style="display: flex; gap: 14px; padding: 16px 2px 0; border-top: 0">
+<span style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 15px; color: #7A756C">04</span>
+<span style="display: flex; flex-direction: column"><span style="font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 500; line-height: 1.3">Nehru jacket with kurta</span><span style="margin-top: 2px; font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #7A756C">Men&#x27;s Wear</span></span>
+</div>
+</article></div>
+
+<div role="listitem"><article class="card" style="background-color: transparent">
+<div style="border-radius: 4px; overflow: hidden; background-color: #E9E5DD"><img src="images/product-saree-magenta-zari.jpg" alt="Zari silk saree, magenta" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover"></div>
+<div style="display: flex; gap: 14px; padding: 16px 2px 0; border-top: 0">
+<span style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 15px; color: #7A756C">05</span>
+<span style="display: flex; flex-direction: column"><span style="font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 500; line-height: 1.3">Zari silk saree, magenta</span><span style="margin-top: 2px; font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #7A756C">Sarees</span></span>
+</div>
+</article></div>
+
+<div role="listitem"><article class="card" style="background-color: transparent">
+<div style="border-radius: 4px; overflow: hidden; background-color: #E9E5DD"><img src="images/product-soap-neem-tulsi.jpg" alt="Neem Tulsi handmade soap" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover"></div>
+<div style="display: flex; gap: 14px; padding: 16px 2px 0; border-top: 0">
+<span style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 15px; color: #7A756C">06</span>
+<span style="display: flex; flex-direction: column"><span style="font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 500; line-height: 1.3">Neem Tulsi handmade soap</span><span style="margin-top: 2px; font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #7A756C">Herbal Care</span></span>
+</div>
+</article></div>
+
+<div role="listitem"><article class="card" style="background-color: transparent">
+<div style="border-radius: 4px; overflow: hidden; background-color: #E9E5DD"><img src="images/product-honey-vindhyachal.jpg" alt="Vindhyachal Agmark honey" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover"></div>
+<div style="display: flex; gap: 14px; padding: 16px 2px 0; border-top: 0">
+<span style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 15px; color: #7A756C">07</span>
+<span style="display: flex; flex-direction: column"><span style="font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 500; line-height: 1.3">Vindhyachal Agmark honey</span><span style="margin-top: 2px; font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #7A756C">Honey</span></span>
+</div>
+</article></div>
+
+</div>
+</section>
+<section id="story" class="sec" aria-labelledby="story-title">
+<div class="wrap stack-sm" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: clamp(40px, 6vw, 96px); align-items: center">
+<div class="reveal" style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(10px, 1.5vw, 16px); align-items: end">
+<img src="images/shop-shelves.jpg" alt="Shelves of folded khadi kurtas and shirts inside the shop" style="grid-column: span 3; display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 4px">
+<img src="images/fabric-stack.jpg" alt="Stacks of hand-woven khadi fabric on the shop shelf" style="grid-column: span 2; display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 4px; margin-bottom: clamp(28px, 4vw, 56px)">
+</div>
+<div class="reveal">
+<p class="over" style="color: #7A756C">Our story</p>
+<h2 id="story-title" class="h2">Four decades of pure handloom</h2>
+<p style="margin: 24px 0 0; font-size: 17px; color: #4A4741">In 1982, Swadeshi Khadi Bhandar opened on S.V. Road in Kandivali West. <em style="font-family: 'Playfair Display', Georgia, serif">Swadeshi</em> means "of our own country" — and the shop has kept that promise ever since, with cloth spun and woven by hand.</p>
+<p style="margin: 16px 0 0; font-size: 17px; color: #4A4741">Today the shelves still hold khadi by the metre in every shade, ready-made kurtas and shirts, sarees, herbal soaps and pure honey — and the same welcome at the counter.</p>
+<dl style="margin: 36px 0 0; padding-top: 28px; border-top: 1px solid #D9D4CA; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px">
+<div><dt style="font-size: 12px; font-weight: 600; letter-spacing: 0.06em; color: #7A756C">Opened</dt><dd style="margin: 4px 0 0; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(26px, 3vw, 40px); font-weight: 500">1982</dd></div>
+<div><dt style="font-size: 12px; font-weight: 600; letter-spacing: 0.06em; color: #7A756C">In Kandivali</dt><dd style="margin: 4px 0 0; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(26px, 3vw, 40px); font-weight: 500">40+ yrs</dd></div>
+<div><dt style="font-size: 12px; font-weight: 600; letter-spacing: 0.06em; color: #7A756C">Open</dt><dd style="margin: 4px 0 0; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(26px, 3vw, 40px); font-weight: 500">6 days</dd></div>
+</dl>
+</div>
+</div>
+</section>
+<section id="why" class="sec" aria-labelledby="why-title" style="padding-top: 0">
+<div class="wrap">
+<div class="reveal" style="text-align: center; max-width: 640px; margin: 0 auto clamp(32px, 5vw, 64px)">
+<p class="over" style="color: #7A756C">Why khadi</p>
+<h2 id="why-title" class="h2">Cloth with a conscience</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 0 clamp(16px, 3vw, 40px)"><div class="reveal" style="padding: clamp(24px, 3vw, 40px) clamp(4px, 2vw, 36px); border-top: 1px solid #D9D4CA">
+<div style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 16px; color: #7A756C">01</div>
+<h3 style="margin: 18px 0 10px; font-family: 'Playfair Display', Georgia, serif; font-size: 28px; font-weight: 500">Handwoven</h3>
+<p style="margin: 0; color: #4A4741">Spun and woven by hand, so every metre carries small, honest irregularities that machine cloth can't copy.</p>
+</div><div class="reveal" style="padding: clamp(24px, 3vw, 40px) clamp(4px, 2vw, 36px); border-top: 1px solid #D9D4CA">
+<div style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 16px; color: #7A756C">02</div>
+<h3 style="margin: 18px 0 10px; font-family: 'Playfair Display', Georgia, serif; font-size: 28px; font-weight: 500">Sustainable</h3>
+<p style="margin: 0; color: #4A4741">Hand-spinning and hand-weaving use far less power than mill production, and keep village weavers at work.</p>
+</div><div class="reveal" style="padding: clamp(24px, 3vw, 40px) clamp(4px, 2vw, 36px); border-top: 1px solid #D9D4CA">
+<div style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 16px; color: #7A756C">03</div>
+<h3 style="margin: 18px 0 10px; font-family: 'Playfair Display', Georgia, serif; font-size: 28px; font-weight: 500">Pure &amp; Natural</h3>
+<p style="margin: 0; color: #4A4741">Breathable cotton that stays cool through a Mumbai summer and softens with every wash.</p>
+</div></div>
+</div>
+</section>
+<section id="visit" aria-labelledby="visit-title" style="background-color: #0F0E0C; color: #F4F1EA">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr))">
+<div style="position: relative; min-height: clamp(280px, 40vw, 620px); overflow: hidden">
+<img src="images/shop-shelves-wide.jpg" alt="Inside Swadeshi Khadi Bhandar, Kandivali West" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: saturate(0.85)">
+<div class="grain" aria-hidden="true"></div>
+</div>
+<div class="reveal" style="padding: clamp(48px, 7vw, 112px) clamp(20px, 5vw, 80px)">
+<p class="over" style="color: #9C968C">Visit us</p>
+<h2 id="visit-title" class="h2" style="color: #F4F1EA">Kandivali West</h2>
+<p style="margin: 18px 0 0; max-width: 420px; color: #B3ADA3">Come in, feel the cloth and take your time. We'll help you find the right colour, fit and length.</p>
+<div style="margin-top: 28px; display: grid; gap: 16px; font-size: 15px">
+<div><div style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7E786F">Address</div><div>Shop No. 34, Shreeji Darshan Shopping Centre, 100 S.V. Road, S.M. Road, Kandivali (West), Mumbai 400067</div></div>
+<div><div style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7E786F">Hours</div><div>Mon–Sat · 10:30 am – 1:30 pm &amp; 3:30 – 8:30 pm · Sunday closed</div></div>
+<div><div style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7E786F">Call</div><div><a href="tel:+912228612828" style="color: #F4F1EA">022 2861 2828</a> · <a href="tel:+919323186249" style="color: #F4F1EA">93231 86249</a> · <a href="tel:+919702828199" style="color: #F4F1EA">97028 28199</a></div></div>
+</div>
+<div class="btns" style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px">
+<a href="https://www.google.com/maps/dir/?api=1&amp;destination=19.2011212,72.8479214" class="btn" style="background-color: #F4F1EA; color: #0F0E0C">Get Directions <span aria-hidden="true">→</span></a>
+<a href="tel:+912228612828" class="btn" style="border: 1px solid #5A564F; color: #F4F1EA">Call the Shop</a>
+</div>
+</div>
+</div>
+</section>
+<footer style="background-color: #0F0E0C; color: #BDB7AC">
+<div class="wrap" style="padding-top: clamp(56px, 7vw, 88px); padding-bottom: 32px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 32px">
+<div>
+<img src="logo/swadeshi-logo-horizontal-white.svg" alt="Swadeshi Khadi Bhandar" style="display: block; height: 56px; width: auto">
+<p style="margin: 18px 0 0; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 18px; line-height: 1.45; color: #EDE6DA">Hand-spun. Hand-woven.<br>Sold with care since 1982.</p>
+</div>
+<div>
+<div style="font-size: 12px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #7E786F; margin-bottom: 10px">Visit</div>
+<p style="margin: 0; font-size: 14px">Shop No. 34, Shreeji Darshan Shopping Centre, 100 S.V. Road, Kandivali (West), Mumbai 400067</p>
+</div>
+<div>
+<div style="font-size: 12px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #7E786F; margin-bottom: 10px">Hours</div>
+<p style="margin: 0; font-size: 14px">Mon–Sat<br>10:30 am – 1:30 pm<br>3:30 pm – 8:30 pm<br>Sunday closed</p>
+</div>
+<div>
+<div style="font-size: 12px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #7E786F; margin-bottom: 10px">Contact</div>
+<div style="display: grid; gap: 4px; font-size: 14px">
+<a href="tel:+912228612828" style="color: #BDB7AC">022 2861 2828</a>
+<a href="mailto:swadeshikhadi82@gmail.com" style="color: #BDB7AC">swadeshikhadi82@gmail.com</a>
+<a href="#" style="color: #BDB7AC">Instagram [@handle]</a>
+</div>
+</div>
+</div>
+<div style="margin-top: 48px; padding-top: 22px; border-top: 1px solid rgba(237, 230, 218, 0.16); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-size: 13px; color: #7E786F">
+<span>© 2026 Swadeshi Khadi Bhandar</span>
+<span>Kandivali West, Mumbai</span>
+</div>
+</div>
+</footer>
+</div>
+</body>
+</html>

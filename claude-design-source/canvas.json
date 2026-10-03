@@ -1,0 +1,46 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "Atelier.dc.html": {
+      "expand": "fill",
+      "h": 8900,
+      "is_interactive": true,
+      "title": "Swadeshi Khadi Bhandar — desktop",
+      "w": 1440,
+      "x": 0,
+      "y": 0
+    },
+    "AtelierPhone.dc.html": {
+      "h": 10200,
+      "is_interactive": true,
+      "title": "Swadeshi Khadi Bhandar — phone",
+      "w": 390,
+      "x": 1520,
+      "y": 0
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-10-02T11:15:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "waiting": {
+      "fill": "orange",
+      "text": "Still to do before going live:\n• Instagram handle (footer)\n• Real shopfront photo + Mr. Uttam / the team\n• Fix name and hours on Google Business Profile\n• Domain + hosting",
+      "w": 380,
+      "x": 1990,
+      "y": 0
+    }
+  },
+  "order": [
+    "Atelier.dc.html",
+    "AtelierPhone.dc.html"
+  ],
+  "pages": [],
+  "title": "Swadeshi Khadi Bhandar — Website"
+}
